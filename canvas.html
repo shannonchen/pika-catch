@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+
+<html manifest="canvas.manifest"> 
+<head>
+    <meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=1.0" />
+      <!-- Don't show the Safari interface if launched outside the browser -->
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+
+	<!-- These are the app icon definitions, and a startup screen image -->
+	<link rel="apple-touch-icon" href="images/app_icon.png"/>
+	<link rel="apple-touch-icon-precomposed" href="images/app_icon.png"/>
+	<link rel="apple-touch-startup-image" href="images/start.png" />
+
+    <title>Catch the Pikachu!</title>
+ <style>
+	body {
+	background-image:url('images/poke.jpg');
+	background-color:#fff;
+	}
+
+	canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
+
+	#content {
+	margin: 0 auto;
+	background-color:rgba(255,0,0,0.5);
+	font-family:Arial,Helvetica,sans-serif;
+	
+	}
+</style>
+
+ <script src="canvas.js"></script>
+ 
+</head>
+
+<body>
+	
+	<div id = "content">
+		<center><h1> Catch the Pikachu!</h1></center>
+	    <canvas id="canvas" height="300" width="300" style="background-color:black"></canvas><br>
+		<form><center><input type=button value="Start Over" align="middle" onClick="window.location.reload()"></center></form> 
+	</div>
+</body>
+</html>
